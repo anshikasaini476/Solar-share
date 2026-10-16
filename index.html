@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolarShare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div class="content">
+      <header class="nav">
+        <a class="brand" href="#/home">☀ SolarShare</a>
+        <button class="burger" onclick="document.getElementById('links').classList.toggle('open');document.body.classList.toggle('menu-open')">☰</button>
+        <nav id="links" class="links"></nav>
+      </header>
+      <div id="msg" class="alert" style="display:none"></div>
+      <main id="app" class="container"></main>
+      <footer class="footer">SolarShare – College Project Prototype. Coordinates manually entered solar surplus data; it does not transfer electricity. Values tagged "Demo" or "Sample" are illustrative only.</footer>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
